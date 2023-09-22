@@ -1,3 +1,8 @@
 [localhost]
-192.168.56.102 ansible_connection=local
-192.168.56.103 ansible_connection=local
+
+# Cent OS
+192.168.56.101	ansible_connection=ssh		apache_package=httpd	php_package=php
+
+# Remote Servers
+192.168.56.102	ansible_connection=local	apache_package=apache2	php_package=libapache2-mod-php
+192.168.56.103	ansible_connection=local	apache_package=apache2	php_package=libapache2-mod-php
